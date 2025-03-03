@@ -20,6 +20,9 @@
         window.onload = updatePage;
     </script>
     <style>
+        body {
+            overflow-y: auto;
+        }
         .hoverable-number {
             cursor: pointer;
             transition: transform 0.3s ease, color 0.3s ease;
@@ -48,8 +51,9 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .home-image {
-            width: 40%;
-            height: auto;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
             border-radius: 10px;
             transition: transform 0.3s ease;
         }
