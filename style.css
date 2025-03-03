@@ -5,27 +5,20 @@ body {
     background-color: navy;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
-    display: flex;
-    width: 80%;
-    max-width: 900px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.counter, .progress-container {
-    width: 45%;
     text-align: center;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.container {
+    width: 80%;
+    max-width: 900px;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
 }
 
 p {
@@ -33,17 +26,38 @@ p {
     font-weight: bold;
 }
 
-.progress-bar {
+/* Progress Bar Section */
+.progress-container {
+    margin-top: 30px;
+}
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.progress-bar {
+    flex-grow: 1;
     height: 30px;
     background-color: gray;
     border-radius: 15px;
     overflow: hidden;
+    margin: 0 10px;
+    position: relative;
 }
 
 .progress {
-    width: 0%; /* Empty progress */
+    width: 0%; /* Dynamic width */
     height: 100%;
     background-color: limegreen;
     transition: width 0.5s ease-in-out;
+}
+
+.progress-label {
+    font-size: 18px;
+    font-weight: bold;
 }
