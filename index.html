@@ -28,6 +28,34 @@
             transform: scale(1.1);
             color: #007bff;
         }
+        .home-panels {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .home-panel {
+            width: 45%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .home-panel:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .home-image {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .home-panel:hover .home-image {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -60,12 +88,12 @@
         <div class="home-panels">
             <div class="home-panel">
                 <h2>3D Printed Home</h2>
-                <img src="3dprint.jpg" alt="3D Printed Home" class="home-image">
+                <img src="3d-printable-home.jpg" alt="3D Printed Home" class="home-image">
                 <p><strong>Cost to Produce:</strong> $4,000</p>
             </div>
             <div class="home-panel">
                 <h2>Modular Home</h2>
-                <img src="modularhome.png" alt="Modular Home" class="home-image">
+                <img src="modular-home.jpg" alt="Modular Home" class="home-image">
                 <p><strong>Cost to Produce:</strong> $10,000</p>
             </div>
         </div>
