@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Rent</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Placeholder for the number of homeless people (fetch from API in future)
+        let homelessCount = 582462; // Example count (change as needed)
+
+        function updateCounter() {
+            document.getElementById("homeless-counter").textContent = homelessCount.toLocaleString();
+        }
+
+        window.onload = updateCounter;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="counter">
+            <h1>Homeless People</h1>
+            <p id="homeless-counter">0</p>
+        </div>
+        <div class="progress-container">
+            <h1>Housed</h1>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
