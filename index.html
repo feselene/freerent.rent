@@ -20,31 +20,13 @@
         window.onload = updatePage;
     </script>
     <style>
-        .home-panels {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
+        .hoverable-number {
+            cursor: pointer;
+            transition: transform 0.3s ease, color 0.3s ease;
         }
-        .home-panel {
-            width: 45%;
-            padding: 15px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .home-panel:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .home-image {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-        .home-panel:hover .home-image {
+        .hoverable-number:hover {
             transform: scale(1.1);
+            color: #007bff;
         }
     </style>
 </head>
@@ -54,7 +36,7 @@
         
         <div class="counter">
             <h2>Homeless People</h2>
-            <p id="homeless-counter">0</p>
+            <p id="homeless-counter" class="hoverable-number" onclick="window.location.href='homeless-info.html'">0</p>
         </div>
 
         <div class="progress-container">
